@@ -1,2 +1,2 @@
 This folder contains the same information from the flat file located inside of the 'Working Instance' folder refactored into separate modules for networking and server configuration.
-Items contained in this folder are considered a WIP and should not be used as they are not deployable at this time. Please see 'Working Instance' for a version of this code that is fuctinoing and deployable/delivarable.
+Items contained in this folder are considered a WIP and should not be used as they are not deployable at this time. Please see 'Working Instance' for a version of this code that is functioning and deployable/delivarable.
