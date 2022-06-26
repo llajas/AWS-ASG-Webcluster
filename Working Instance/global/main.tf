@@ -53,13 +53,13 @@ resource "aws_dynamodb_table" "dynamo_locks" {
 
 terraform {
   backend "s3" {
-    # Replace this with your bucket name!
-    bucket         = "i-want-this-job-llajas"
+    # Replace this with your custom bucket name and key location!
+    bucket         = "YOUR-BUCKET-HERE"
     key            = "global/s3/terraform.tfstate"
     region         = "us-east-2"
 
     # Replace this with your DynamoDB table name!
-    dynamodb_table = "locked-table-llajas"
+    dynamodb_table = "YOUR-TABLE-HERE"
     encrypt        = true
   }
 }
