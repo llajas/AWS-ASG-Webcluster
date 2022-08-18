@@ -3,7 +3,7 @@ Contained in this repo are two major resources for Amazon AWS provisioned via Te
 1. global - This folder contains the necessary Terraform code to create an s3 bucket and DynamoDB table for storing/locking the state file in a secure fashion. More information can be found inside the 'README.MD' file inside the global folder. Do note that this is not necessary, but allows for the state file to be locked for colloboration and encrypted to prevent reading of secrets once implemented into state.
 
 2. web-server - A web app contained within that operates with/under following conditions:
-    - A private VPC just for the web application.
+    - A private VPC just for the web application running via NGINX.
     - Dual public & private subnets. These are spread across separate AWS zones for added resiliency.
     -  A load balancer with ingress limited to port 80 for web access. 
     - SSH / Port 22 access within the private subnet*
