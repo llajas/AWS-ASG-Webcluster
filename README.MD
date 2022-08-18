@@ -1,4 +1,4 @@
-Contained in this folder are two major resources:
+Contained in this repo are two major resources for Amazon AWS provisioned via Terraform:
 
 1. global - This folder contains the necessary Terraform code to create an s3 bucket and DynamoDB table for storing/locking the state file in a secure fashion. More information can be found inside the 'README.MD' file inside the global folder. Do note that this is not necessary, but allows for the state file to be locked for colloboration and encrypted to prevent reading of secrets once implemented into state.
 
