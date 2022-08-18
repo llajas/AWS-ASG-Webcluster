@@ -51,15 +51,15 @@ resource "aws_dynamodb_table" "dynamo_locks" {
   }
 }
 
-terraform {
-  backend "s3" {
-    # Replace this with your custom bucket name and key location!
-    bucket         = "YOUR-BUCKET-HERE"
-    key            = "global/s3/terraform.tfstate"
-    region         = "us-east-2"
+# terraform {
+#   backend "s3" {
+#     # Replace this with your bucket name!
+#     bucket         = "S3-BUCKET-HERE"
+#     key            = "global/s3/modules/web-server/terraform.tfstate"
+#     region         = "us-east-2"
 
-    # Replace this with your DynamoDB table name!
-    dynamodb_table = "YOUR-TABLE-HERE"
-    encrypt        = true
-  }
-}
+#     # Replace this with your DynamoDB table name!
+#     dynamodb_table = "DYNAMODB_TABLE_HERE"
+#     encrypt        = true
+#   }
+# }
